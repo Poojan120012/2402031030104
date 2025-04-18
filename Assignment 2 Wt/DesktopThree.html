@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Brand</title>
+	<style>
+    .profile-image {
+        width: 50px;  /* Reduced size */
+        height: 50px; 
+        object-fit: contain; /* Ensures correct scaling */
+    }
+</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .profile-icon {
+            font-size: 24px;
+        }
+
+        .center-profile {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            line-height: 0.8;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            font-size: 20px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 20px;
+        }
+
+        .vision {
+            max-width: 200px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        /* Updated Main Page Button */
+        .main-page-button {
+            background-color: #000000; /* Dark Black */
+            color: white;
+            padding: 20px 40px; /* Bigger button */
+            border: 3px solid white; /* White border */
+            border-radius: 25px; /* Smooth round edges */
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            width: 250px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3); /* Light glow */
+            transition: 0.3s ease-in-out;
+        }
+
+        .main-page-button:hover {
+            background-color: white;
+            color: black;
+            border: 3px solid black;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+        }
+
+        .product-image {
+            width: 160px;
+            height: 200px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        .fashion-showcase {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .fashion-image {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .fashion-text {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        .footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .vision, .fashion-showcase {
+                text-align: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile-icon">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="black" stroke-width="2"/>
+                <path d="M4 20C4 16.6863 7.58172 14 12 14C16.4183 14 20 16.6863 20 20V21H4V20Z" stroke="black" stroke-width="2"/>
+            </svg>
+        </div>
+
+       <div class="center-profile">
+    <img src="public/images/img_header_logo.png" alt="Profile Icon" class="profile-image">
+</div>
+        <div class="social-icons">
+            <div class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="4" stroke="black" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="5" stroke="black" stroke-width="2"/>
+                    <circle cx="18" cy="6" r="1" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="vision">
+            <p>SINCE 2000</p>
+            <p>WE HAD A VISION</p>
+            <p>TO MAKE EVERY</p>
+            <p>MAN & WOMAN</p>
+            <p><u>DRESS WELL.</u></p>
+            <img src="public/images/img_priscilla_du_pr.png" alt="Clothing items" class="product-image">
+        </div>
+
+        <!-- Updated Main Page Button -->
+        <div class="center-content">
+            <a href="SHOP.html">
+                <button class="main-page-button">MAIN PAGE</button>
+            </a>
+        </div>
+
+        <div class="fashion-showcase">
+           <img src="public/images/img_katsiaryna_endr.png" height="220" width="220" alt="Fashion model" class="fashion-image">
+
+            <div class="fashion-text">
+                <p>LOOK</p>
+                <p>FANCY</p>
+                <p>ELEGANT</p>
+                <p>LUXURY</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        CALL US | ABOUT US
+    </div>
+</body>
+</html>
