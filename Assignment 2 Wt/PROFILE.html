@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshil's Application3</title>
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Website created using create-react-app">
+
+    <style>
+        /* Reset and Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Profile Content Layout */
+        .profile-content {
+            display: flex;
+            flex-direction: column; /* Stack image and details */
+            align-items: flex-start; /* Align to the left */
+            padding: 20px;
+            max-width: 400px; /* Keep content aligned */
+            margin-left: 20px; /* Keep content on the left */
+        }
+
+        .class-4092564profile {
+            width: 200px; /* Adjust image size */
+            border-radius: 10px;
+        }
+
+        /* Details Section */
+        .rowdetalis {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .detalis {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .linefive_one {
+            width: 50px;
+            height: 3px;
+            background-color: black;
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        .footerprice {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            margin-top: 30px;
+            border-top: 2px solid #ddd;
+        }
+
+        .price {
+            font-size: 16px;
+            margin: 5px;
+        }
+		<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .profile-icon {
+            font-size: 24px;
+        }
+
+        .center-profile {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            line-height: 0.8;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            font-size: 20px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 20px;
+        }
+
+        .vision {
+            max-width: 200px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        .main-page-btn {
+            background-color: #000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-align: center;
+            font-size: 28px;
+            width: 100%;
+            max-width: 700px;
+            margin-top: 100px;
+        }
+
+.profile-image {
+    width: 80px;  /* Same size as the SVG */
+    height: 80px;
+    object-fit: contain; /* Ensures the image scales properly */
+}
+
+        .product-image {
+            width: 160px;
+            height: 200px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        .fashion-showcase {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .fashion-image {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .fashion-text {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        .footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .vision, .fashion-showcase {
+                text-align: center;
+                align-items: center;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+<div class="header">
+
+        <div class="profile-icon">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 	11 12 11Z" stroke="black" stroke-width="2"/>
+                <path d="M4 20C4 16.6863 7.58172 14 12 14C16.4183 14 20 16.6863 20 20V21H4V20Z" stroke="black" stroke-	width="2"/>
+            </svg>
+        </div>
+
+        <div class="center-profile">
+    <img src="public/images/img_header_logo.png" alt="Profile Icon" class="profile-image">
+</div>
+
+
+        <div class="social-icons">
+            <div class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="4" stroke="black" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="5" stroke="black" stroke-width="2"/>
+                    <circle cx="18" cy="6" r="1" fill="black"/>
+                </svg>
+            </div>
+            <div class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 8L14 12L18 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 8L10 12L6 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+	
+    <div class="profile">
+        <!-- Profile Image & Details Section -->
+        <div class="profile-content">
+            <img src="public/images/img_4092564_profile_about_mobile.png" 
+                 alt="Profile Image" 
+                 class="class-4092564profile">
+
+            <div class="rowdetalis">
+                <p class="detalis">DETAILS</p>
+                
+                
+            </div>
+        </div>
+
+     
+       
+			<div class="footer">
+        CALL US| ABOUT US
+    </div>
+       
+    </div>
+</body>
+</html>
